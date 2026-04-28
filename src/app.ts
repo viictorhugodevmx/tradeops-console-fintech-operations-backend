@@ -5,6 +5,7 @@ import authRoutes from './modules/auth/auth.routes';
 import tradeRequestRoutes from './modules/trade-requests/trade-request.routes';
 import activityLogRoutes from './modules/activity-logs/activity-log.routes';
 import dashboardRoutes from './modules/dashboard/dashboard.routes';
+import userRoutes from './modules/users/user.routes';
 
 const app = express();
 
@@ -23,5 +24,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/trade-requests', tradeRequestRoutes);
 app.use('/api/trade-requests', activityLogRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/users', userRoutes);
 
 export default app;
